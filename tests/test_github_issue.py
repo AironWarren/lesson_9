@@ -7,11 +7,11 @@ def test_github():
     browser.open("https://github.com")
 
     browser.element(".header-search-input").click()
-    browser.element(".header-search-input").send_keys("AironWarren/lesson_2")
+    browser.element(".header-search-input").send_keys("AironWarren/lesson_9")
     browser.element(".header-search-input").submit()
 
-    browser.element(by.link_text("AironWarren/lesson_2")).click()
+    browser.element(by.link_text("AironWarren/lesson_9")).click()
 
     browser.element("#issues-tab").click()
 
-    browser.element(by.partial_text("#76")).should(be.visible)
+    browser.element(by.partial_text("#1")).should(be.visible)
